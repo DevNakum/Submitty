@@ -43,7 +43,7 @@ tr > td:nth-child(5) {
     position: sticky;
     left: 16.75rem;
     border-right: 1px solid var(--standard-medium-gray);
-}
+}   
 
 tr:nth-child(odd) td:nth-child(n+1):nth-child(-n+5) {
     background: var(--default-white);
