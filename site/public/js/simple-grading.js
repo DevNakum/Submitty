@@ -680,11 +680,6 @@ function setupSimpleGrading(action) {
             else if (direction == "left") new_selector_array[3] -= 1;
             else if (direction == "right") new_selector_array[3] += 1;
             
-            //scroll to leftmost position, if reach first item in col with arrowkey navigation.
-            if(direction == "left" && new_selector_array[3]==0){
-               var container = document.querySelector('.scrollable-table');
-                container.scrollLeft ="-30px";
-            }       
               
             if (new_selector_array[2] < 0 && direction == "up") {
                 new_selector_array[2] += 1;
