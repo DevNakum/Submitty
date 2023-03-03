@@ -680,6 +680,10 @@ function setupSimpleGrading(action) {
             else if (direction == "left") new_selector_array[3] -= 1;
             else if (direction == "right") new_selector_array[3] += 1;
             
+            if(direction == "left"){
+                var container = document.querySelector('.scrollable-table');
+                 container.scrollLeft="0px";
+            }
               
             if (new_selector_array[2] < 0 && direction == "up") {
                 new_selector_array[2] += 1;
